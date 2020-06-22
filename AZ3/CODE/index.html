@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>AZ4</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<link type="text/css" rel="stylesheet" href="main.css">
+				<link type="text/css" rel="stylesheet" href="main.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" media="screen" href="css/style.css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link type="text/css" rel="stylesheet" href="main.css">
+
+		
+		
+		
+		
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image:
+
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("/w3images/parallax2.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("/w3images/parallax3.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+	#nav
+	{
+		position: absolute;
+		display: block;
+		top: 2.5em;
+		left: 0;
+		width: 100%;
+		text-align: center;
+	}
+
+		#nav > ul > li > ul
+		{
+			display: none;
+		}
+
+		#nav > ul
+		{
+			display: inline-block;
+			border-radius: 0.35em;
+			box-shadow: inset 0px 0px 1px 1px rgba(255,255,255,0.25);
+			padding: 0 1.5em 0 1.5em;
+		}
+
+		#nav > ul > li
+		{
+			display: inline-block;
+			text-align: center;
+			padding: 0 1.5em 0 1.5em;
+		}
+		
+			#nav > ul > li > a,
+			#nav > ul > li > span
+			{
+				display: block;
+				color: #eee;
+				color: rgba(255,255,255,0.75);
+				text-transform: uppercase;
+				text-decoration: none;
+				font-size: 0.9em;
+				letter-spacing: 0.25em;
+				height: 5em;
+				line-height: 5em;
+				-moz-transition: all .25s ease-in-out;
+				-webkit-transition: all .25s ease-in-out;
+				-o-transition: all .25s ease-in-out;
+				-ms-transition: all .25s ease-in-out;
+				transition: all .25s ease-in-out;
+				outline: 0;
+			}
+			
+			#nav > ul > li:hover > a,
+			#nav > ul > li.active > a,
+			#nav > ul > li.active > span
+			{
+				color: #fff;
+			}
+
+	.dropotron
+	{
+		background: #222835 url('images/overlay.png');
+		background-color: rgba(44,50,63,0.925);
+		padding: 1.25em 1em 1.25em 1em;
+		border-radius: 0.35em;
+		box-shadow: inset 0px 0px 1px 1px rgba(255,255,255,0.25);
+		min-width: 12em;
+		text-align: left;
+		margin-top: -1.25em;
+		margin-left: -1px;
+	}
+	
+		.dropotron.level-0
+		{
+			margin-top: -1px;
+			margin-left: 0;
+			border-top-left-radius: 0;
+			border-top-right-radius: 0;
+		}
+	
+		.dropotron a,
+		.dropotron span
+		{
+			display: block;
+			color: #eee;
+			color: rgba(255,255,255,0.75);
+			text-transform: uppercase;
+			text-decoration: none;
+			font-size: 0.7em;
+			letter-spacing: 0.25em;
+			border-top: solid 1px rgba(255,255,255,0.15);
+			line-height: 3em;
+			-moz-transition: all .25s ease-in-out;
+			-webkit-transition: all .25s ease-in-out;
+			-o-transition: all .25s ease-in-out;
+			-ms-transition: all .25s ease-in-out;
+			transition: all .25s ease-in-out;
+		}
+		
+		.dropotron li:first-child a,
+		.dropotron li:first-child span
+		{
+			border-top: 0;
+		}
+		
+		.dropotron li:hover > a,
+		.dropotron li:hover > span
+		{
+			color: #fff;
+		}
+
+#navicons
+	{
+		position: absolute;
+		display: block;
+		top: 0em;
+		left: 0;
+		width: 100%;
+		text-align: center;
+	}
+.navlink {
+    font-size: 40px;
+    padding-left: .5em;
+    padding-right: .5em;
+}
+
+.navlink a {
+    transition: color .5s;
+}
+
+.navlink a:hover,
+.navlink a:focus {
+    color: #ffffff !important;
+    cursor: pointer;
+    outline: 0;
+}
+
+#navbar {
+    color: #efefef;
+    line-height: 1.5;
+    display: none;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+    margin-top: -20px;
+}
+
+h3 {
+    width: 90%;
+    margin-left: 5%;
+    font-size: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+h4 {
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+h5 {
+    font-size: 18px;
+    font-weight: normal;
+    margin-left: 5%;
+    margin-top: 18px;
+    color: #d1d1d1;
+}
+
+h5 a {
+    color: #38afdb;
+}
+
+h5 a:hover,
+h5 a:focus {
+    color: #60d4ff;
+    text-decoration: none;
+    cursor: pointer;
+    outline: 0;
+}
+
+h1,
+h4 {
+    color: white;
+}
+
+h2,
+h3 {
+    color: #60d4ff;
+}
+
+a {
+    text-decoration: none;
+    transition: color .5s;
+    color: inherit;
+}
+
+
+
+
+
+       .fa{
+		position: relative;
+		display: table-cell;
+		width: 59px;
+		height: 37px;
+		text-align: center;
+		verticle-align: middle;
+		font-size: 20px;
+		}
+		
+		.main-menu:hover,
+		 nav.main-menu.expanded{
+		   width:350px;
+		   overflow: visible;
+		 }
+		 
+		 .main-menu{
+			background: #000;
+			border-right:1px solid #fff;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			height: 100%;
+			left: 0;
+			width: 59px;
+			overflow: hidden;
+			transition: width 0.5s linear;
+			trransform: translateZ(0) scale(1,1);
+			z-index: 1000;
+		 }
+		 
+		 .main-menu>ul{
+			margin: 7px 0;
+		}
+		
+		.main-menu li{
+			position:relative;
+			display: block;
+			width: 250px;
+		}
+		.main-menu li>a{
+			position:relative;
+			display: table;
+			border-collapse: collapse;
+			border-spacing: 0;
+			color: white;
+			font-family: arial;
+			font-size: 14px;
+			text-decoration: none;
+			transition:all .ls linear
+		}
+		 
+
+
+	 
+</style>
+
+
+
+
+	</head>
+
+	<body>
+		<nav id="nav">
+	<ul>
+		<li class="current"><a href="index.html">Projects</a></li>
+		<li><a href="">Codes</a></li>
+		<li><a href="left-sidebar.html">HOME</a></li>
+		<li><a href="right-sidebar.html">3D Templates</a></li>
+		<li><a href="no-sidebar.html">Games</a></li>
+		<li><a href="no-sidebar.html">Photography</a></li>
+	</ul>
+</nav>
+
+  <div id="navicons" class="w3-padding-large w3-animate-opacity" style="top: 500px;">
+            <span class="navlink" id="email"><a href="mailto:navidmx@gmail.com?Subject=Hey%20Navid!" target="_newtab"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></span>
+            <span class="navlink" id="github"><a href="http://www.github.com/navidmx" target="_newtab"><i class="fa fa-github" aria-hidden="true"></i></a></span>
+            <span class="navlink" id="linkedin"><a href="http://www.linkedin.com/in/navid-mamoon" target="_newtab"><i class="fa fa-linkedin" aria-hidden="true"></i></a></span>
+            <span class="navlink" id="facebook"><a href="http://www.facebook.com/navidmx" target="_newtab"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></span>
+            <span class="navlink" id="calendar"><a href="http://www.twitter.com/navidmx" target="_newtab"><i class="fa fa-twitter" aria-hidden="true"></i></a></span>
+            <span class="navlink" id="resume"><a href="#resumeModal" data-toggle="modal"><i class="fa fa-file-text-o" aria-hidden="true"></i></a></span>
+  </div>
+	
+	
+	
+	
+		<div id="container"></div>
+
+		<script type="x-shader/x-vertex" id="vertexshader">
+
+			attribute float size;
+			attribute vec3 ca;
+
+			varying vec3 vColor;
+
+			void main() {
+
+				vColor = ca;
+
+				vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
+
+				gl_PointSize = size * ( 300.0 / -mvPosition.z );
+
+				gl_Position = projectionMatrix * mvPosition;
+
+			}
+
+		</script>
+
+		<script type="x-shader/x-fragment" id="fragmentshader">
+
+			uniform vec3 color;
+			uniform sampler2D pointTexture;
+
+			varying vec3 vColor;
+
+			void main() {
+
+				vec4 color = vec4( color * vColor, 1.0 ) * texture2D( pointTexture, gl_PointCoord );
+
+				gl_FragColor = color;
+
+			}
+
+		</script>
+
+		<script type="module">
+
+			import * as THREE from '../build/three.module.js';
+
+			import Stats from './jsm/libs/stats.module.js';
+
+			var renderer, scene, camera, stats;
+			var sphere, length1;
+
+			var WIDTH = window.innerWidth;
+			var HEIGHT = window.innerHeight;
+
+			init();
+			animate();
+
+			function init() {
+
+				camera = new THREE.PerspectiveCamera( 45, WIDTH / HEIGHT, 1, 20000 );
+				camera.position.z = 270;
+
+				scene = new THREE.Scene();
+
+				var radius = 120, segments = 68, rings = 30;
+
+				var vertices1 = new THREE.SphereGeometry( radius, segments, rings ).vertices;
+				var vertices2 = new THREE.BoxGeometry( 0.8 * radius, 0.8 * radius, 0.8 * radius, 10, 10, 10 ).vertices;
+
+				length1 = vertices1.length;
+
+				var vertices = vertices1.concat( vertices2 );
+
+				var positions = new Float32Array( vertices.length * 3 );
+				var colors = new Float32Array( vertices.length * 3 );
+				var sizes = new Float32Array( vertices.length );
+
+				var vertex;
+				var color = new THREE.Color();
+
+				for ( var i = 0, l = vertices.length; i < l; i ++ ) {
+
+					vertex = vertices[ i ];
+					vertex.toArray( positions, i * 3 );
+
+					if ( i < length1 ) {
+
+						color.setHSL( 0.01 + 0.1 * ( i / length1 ), 0.99, ( vertex.y + radius ) / ( 4 * radius ) );
+
+					} else {
+
+						color.setHSL( 0.6, 0.75, 0.25 + vertex.y / ( 2 * radius ) );
+
+					}
+
+					color.toArray( colors, i * 3 );
+
+					sizes[ i ] = i < length1 ? 10 : 40;
+
+				}
+
+				var geometry = new THREE.BufferGeometry();
+				geometry.setAttribute( 'position', new THREE.BufferAttribute( positions, 3 ) );
+				geometry.setAttribute( 'size', new THREE.BufferAttribute( sizes, 1 ) );
+				geometry.setAttribute( 'ca', new THREE.BufferAttribute( colors, 3 ) );
+
+				//
+
+				var texture = new THREE.TextureLoader().load( "textures/sprites/disc.png" );
+				texture.wrapS = THREE.RepeatWrapping;
+				texture.wrapT = THREE.RepeatWrapping;
+
+				var material = new THREE.ShaderMaterial( {
+
+					uniforms: {
+						color: { value: new THREE.Color( 0xffffff ) },
+						pointTexture: { value: texture }
+					},
+					vertexShader: document.getElementById( 'vertexshader' ).textContent,
+					fragmentShader: document.getElementById( 'fragmentshader' ).textContent,
+					transparent: true
+
+				} );
+
+				//
+
+				sphere = new THREE.Points( geometry, material );
+				scene.add( sphere );
+
+				//
+
+				renderer = new THREE.WebGLRenderer();
+				renderer.setPixelRatio( window.devicePixelRatio );
+				renderer.setSize( WIDTH, HEIGHT );
+
+				var container = document.getElementById( 'container' );
+				container.appendChild( renderer.domElement );
+
+				stats = new Stats();
+				
+
+				//
+
+				window.addEventListener( 'resize', onWindowResize, false );
+
+			}
+
+			function onWindowResize() {
+
+				camera.aspect = window.innerWidth / window.innerHeight;
+				camera.updateProjectionMatrix();
+
+				renderer.setSize( window.innerWidth, window.innerHeight );
+
+			}
+
+			function sortPoints() {
+
+				var vector = new THREE.Vector3();
+
+				// Model View Projection matrix
+
+				var matrix = new THREE.Matrix4();
+				matrix.multiplyMatrices( camera.projectionMatrix, camera.matrixWorldInverse );
+				matrix.multiply( sphere.matrixWorld );
+
+				//
+
+				var geometry = sphere.geometry;
+
+				var index = geometry.getIndex();
+				var positions = geometry.getAttribute( 'position' ).array;
+				var length = positions.length / 3;
+
+				if ( index === null ) {
+
+					var array = new Uint16Array( length );
+
+					for ( var i = 0; i < length; i ++ ) {
+
+						array[ i ] = i;
+
+					}
+
+					index = new THREE.BufferAttribute( array, 1 );
+
+					geometry.setIndex( index );
+
+				}
+
+				var sortArray = [];
+
+				for ( var i = 0; i < length; i ++ ) {
+
+					vector.fromArray( positions, i * 3 );
+					vector.applyMatrix4( matrix );
+
+					sortArray.push( [ vector.z, i ] );
+
+				}
+
+				function numericalSort( a, b ) {
+
+					return b[ 0 ] - a[ 0 ];
+
+				}
+
+				sortArray.sort( numericalSort );
+
+				var indices = index.array;
+
+				for ( var i = 0; i < length; i ++ ) {
+
+					indices[ i ] = sortArray[ i ][ 1 ];
+
+				}
+
+				geometry.index.needsUpdate = true;
+
+			}
+
+			function animate() {
+
+				requestAnimationFrame( animate );
+
+				render();
+				stats.update();
+
+			}
+
+			function render() {
+
+				var time = Date.now() * 0.005;
+
+				sphere.rotation.y = 0.02 * time;
+				sphere.rotation.z = 0.02 * time;
+
+				var geometry = sphere.geometry;
+				var attributes = geometry.attributes;
+
+				for ( var i = 0; i < attributes.size.array.length; i ++ ) {
+
+					if ( i < length1 ) {
+
+						attributes.size.array[ i ] = 16 + 12 * Math.sin( 0.1 * i + time );
+
+					}
+
+				}
+
+				attributes.size.needsUpdate = true;
+
+				sortPoints();
+
+				renderer.render( scene, camera );
+
+			}
+
+		</script>
+
+</body>
+
+</html>

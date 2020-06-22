@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>M. AWAISUDDIN N.K</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link type="text/css" rel="stylesheet" href="main.css">
+<link rel="stylesheet" media="screen" href="css/style.css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+	<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image:
+
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("/w3images/parallax2.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("/w3images/parallax3.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+	#nav
+	{
+		position: absolute;
+		display: block;
+		top: 2.5em;
+		left: 0;
+		width: 100%;
+		text-align: center;
+	}
+
+		#nav > ul > li > ul
+		{
+			display: none;
+		}
+
+		#nav > ul
+		{
+			display: inline-block;
+			border-radius: 0.35em;
+			box-shadow: inset 0px 0px 1px 1px rgba(255,255,255,0.25);
+			padding: 0 1.5em 0 1.5em;
+		}
+
+		#nav > ul > li
+		{
+			display: inline-block;
+			text-align: center;
+			padding: 0 1.5em 0 1.5em;
+		}
+		
+			#nav > ul > li > a,
+			#nav > ul > li > span
+			{
+				display: block;
+				color: #eee;
+				color: rgba(255,255,255,0.75);
+				text-transform: uppercase;
+				text-decoration: none;
+				font-size: 0.9em;
+				letter-spacing: 0.25em;
+				height: 5em;
+				line-height: 5em;
+				-moz-transition: all .25s ease-in-out;
+				-webkit-transition: all .25s ease-in-out;
+				-o-transition: all .25s ease-in-out;
+				-ms-transition: all .25s ease-in-out;
+				transition: all .25s ease-in-out;
+				outline: 0;
+			}
+			
+			#nav > ul > li:hover > a,
+			#nav > ul > li.active > a,
+			#nav > ul > li.active > span
+			{
+				color: #fff;
+			}
+
+	.dropotron
+	{
+		background: #222835 url('images/overlay.png');
+		background-color: rgba(44,50,63,0.925);
+		padding: 1.25em 1em 1.25em 1em;
+		border-radius: 0.35em;
+		box-shadow: inset 0px 0px 1px 1px rgba(255,255,255,0.25);
+		min-width: 12em;
+		text-align: left;
+		margin-top: -1.25em;
+		margin-left: -1px;
+	}
+	
+		.dropotron.level-0
+		{
+			margin-top: -1px;
+			margin-left: 0;
+			border-top-left-radius: 0;
+			border-top-right-radius: 0;
+		}
+	
+		.dropotron a,
+		.dropotron span
+		{
+			display: block;
+			color: #eee;
+			color: rgba(255,255,255,0.75);
+			text-transform: uppercase;
+			text-decoration: none;
+			font-size: 0.7em;
+			letter-spacing: 0.25em;
+			border-top: solid 1px rgba(255,255,255,0.15);
+			line-height: 3em;
+			-moz-transition: all .25s ease-in-out;
+			-webkit-transition: all .25s ease-in-out;
+			-o-transition: all .25s ease-in-out;
+			-ms-transition: all .25s ease-in-out;
+			transition: all .25s ease-in-out;
+		}
+		
+		.dropotron li:first-child a,
+		.dropotron li:first-child span
+		{
+			border-top: 0;
+		}
+		
+		.dropotron li:hover > a,
+		.dropotron li:hover > span
+		{
+			color: #fff;
+		}
+
+#navicons
+	{
+		position: absolute;
+		display: block;
+		top: 0em;
+		left: 0;
+		width: 100%;
+		text-align: center;
+	}
+.navlink {
+    font-size: 40px;
+    padding-left: .5em;
+    padding-right: .5em;
+}
+
+.navlink a {
+    transition: color .5s;
+}
+
+.navlink a:hover,
+.navlink a:focus {
+    color: #ffffff !important;
+    cursor: pointer;
+    outline: 0;
+}
+
+#navbar {
+    color: #efefef;
+    line-height: 1.5;
+    display: none;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+    margin-top: -20px;
+}
+
+h3 {
+    width: 90%;
+    margin-left: 5%;
+    font-size: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+h4 {
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+h5 {
+    font-size: 18px;
+    font-weight: normal;
+    margin-left: 5%;
+    margin-top: 18px;
+    color: #d1d1d1;
+}
+
+h5 a {
+    color: #38afdb;
+}
+
+h5 a:hover,
+h5 a:focus {
+    color: #60d4ff;
+    text-decoration: none;
+    cursor: pointer;
+    outline: 0;
+}
+
+h1,
+h4 {
+    color: white;
+}
+
+h2,
+h3 {
+    color: #60d4ff;
+}
+
+a {
+    text-decoration: none;
+    transition: color .5s;
+    color: inherit;
+}
+
+
+
+
+
+       .fa{
+		position: relative;
+		display: table-cell;
+		width: 59px;
+		height: 37px;
+		text-align: center;
+		verticle-align: middle;
+		font-size: 20px;
+		}
+		
+		.main-menu:hover,
+		 nav.main-menu.expanded{
+		   width:350px;
+		   overflow: visible;
+		 }
+		 
+		 .main-menu{
+			background: #000;
+			border-right:1px solid #fff;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			height: 100%;
+			left: 0;
+			width: 59px;
+			overflow: hidden;
+			transition: width 0.5s linear;
+			trransform: translateZ(0) scale(1,1);
+			z-index: 1000;
+		 }
+		 
+		 .main-menu>ul{
+			margin: 7px 0;
+		}
+		
+		.main-menu li{
+			position:relative;
+			display: block;
+			width: 250px;
+		}
+		.main-menu li>a{
+			position:relative;
+			display: table;
+			border-collapse: collapse;
+			border-spacing: 0;
+			color: white;
+			font-family: arial;
+			font-size: 14px;
+			text-decoration: none;
+			transition:all .ls linear
+		}
+		 
+
+
+	 
+</style>
+
+</head>
+
+<body>
+
+
+<script>
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	<!-- Navbar (sit on top) -->
+<nav id="nav">
+	<ul>
+		<li class="current"><a href="index.html">Projects</a></li>
+		<li><a href="">Codes</a></li>
+		<li><a href="left-sidebar.html">HOME</a></li>
+		<li><a href="right-sidebar.html">3D Templates</a></li>
+		<li><a href="no-sidebar.html">Games</a></li>
+		<li><a href="no-sidebar.html">Photography</a></li>
+	</ul>
+</nav>
+
+<div class="area" >
+	    <nav class="main-menu" style="position:center; top: 100px;  ">
+		    <ul>
+			    <li class="has-subnav">
+				    <a class="w3-center w3-padding-small w3-gray w3-large w3-wide w3-animate-opacity">
+					    <i class="devicon-amazonwebservices-plain-wordmark fa-3x"></i>
+						<span class="nav-text">
+						AWS 
+						</span>
+					</a>
+				</li>
+				
+				<li class="has-subnav">
+				    <a class="w3-center w3-padding-small w3-gray w3-large w3-wide w3-animate-opacity">
+					    <i class="devicon-illustrator-line fa-3x"></i>
+						<span class="nav-text">
+						Adobe I
+						</span>
+					</a>
+				</li>
+				
+				<li class="has-subnav">
+				    <a class="w3-center w3-padding-small w3-white w3-large w3-wide w3-animate-opacity">
+					    <i class="devicon-c-plain fa-3x" ></i>
+						<span class="nav-text">
+						C       
+						</span>
+					</a>
+				</li>
+				
+				<li class="has-subnav">
+				    <a class="w3-center w3-padding-small w3-white w3-large w3-wide w3-animate-opacity">
+					    <i class="devicon-css3-plain fa-3x" ></i>
+						<span class="nav-text">
+						CSS      
+						</span>
+					</a>
+				</li>
+				
+				<li class="has-subnav">
+				    <a class="w3-center w3-padding-small w3-white w3-large w3-wide w3-animate-opacity">
+					    <i class="devicon-cplusplus-plain fa-3x" ></i>
+						<span class="nav-text">
+						C++      
+						</span>
+					</a>
+				</li>
+				
+				<li class="has-subnav">
+				    <a class="w3-center w3-padding-small w3-white w3-large w3-wide w3-animate-opacity">
+					    <i class="devicon-chrome-plain-wordmark fa-3x" ></i>
+						<span class="nav-text">
+						Chrome   
+						</span>
+					</a>
+				</li>
+				
+				<li class="has-subnav">
+				    <a class="w3-center w3-padding-small w3-red w3-large w3-wide w3-animate-opacity">
+					    <i class="devicon-django-plain fa-3x"></i>
+						<span class="nav-text">
+						Django  
+						</span>
+					</a>
+				</li>
+				
+				<li class="has-subnav">
+				    <a class="w3-center w3-padding-small w3-red w3-large w3-wide w3-animate-opacity">
+					    <i class="devicon-facebook-plain fa-3x"></i>
+						<span class="nav-text">
+						Facebook 
+						</span>
+					</a>
+				</li>
+				
+				
+				
+				<li class="has-subnav">
+				    <a class="w3-center w3-padding-small w3-orange w3-large w3-wide w3-animate-opacity">
+					    <i class="devicon-inkscape-plain fa-3x"></i>
+						<span class="nav-text">
+						InkScape
+						</span>
+					</a>
+				</li>
+				
+				<li class="has-subnav">
+				    <a class="w3-center w3-padding-small w3-green w3-large w3-wide w3-animate-opacity">
+					    <i class="devicon-javascript-plain fa-3x"></i>
+						<span class="nav-text">
+						JavaS
+						</span>
+					</a>
+				</li>
+				
+				<li class="has-subnav">
+				    <a class="w3-center w3-padding-small w3-orange w3-large w3-wide w3-animate-opacity">
+					    <i class="devicon-linux-plain fa-3x"></i>
+						<span class="nav-text">
+						Linux
+						</span>
+					</a>
+				</li>
+				
+				
+				<li class="has-subnav">
+				    <a class="w3-center w3-padding-small w3-yellow w3-large w3-wide w3-animate-opacity">
+					    <i class="devicon-mysql-plain-wordmark colored fa-3x"></i>
+						<span class="nav-text">
+						MySQL   
+						</span>
+					</a>
+				</li>
+				
+				
+				<li class="has-subnav">
+				    <a class="w3-center w3-padding-small w3-sand w3-large w3-wide w3-animate-opacity">
+					    <i class="devicon-nodejs-plain-wordmark fa-3x"></i>
+						<span class="nav-text">
+						Node.js  
+						</span>
+					</a>
+				</li>
+				
+				<li class="has-subnav">
+				    <a class="w3-center w3-padding-small w3-brown w3-large w3-wide w3-animate-opacity">
+					    <i class="devicon-php-plain fa-3x"></i>
+						<span class="nav-text">
+						PHP     
+						</span>
+					</a>
+				</li>
+				
+				<li class="has-subnav">
+				    <a class="w3-center w3-padding-small w3-brown w3-large w3-wide w3-animate-opacity">
+					    <i class="devicon-photoshop-line fa-3x"></i>
+						<span class="nav-text">
+						PS    
+						</span>
+					</a>
+				</li>
+				
+				<li class="has-subnav">
+				    <a class="w3-center w3-padding-small w3-aqua w3-large w3-wide w3-animate-opacity">
+					    <i class="devicon-python-plain-wordmark fa-3x"></i>
+						<span class="nav-text">
+						Python  
+						</span>
+					</a>
+				</li>
+				
+				<li class="has-subnav">
+				    <a class="w3-center w3-padding-small w3-pink w3-large w3-wide w3-animate-opacity">
+					    <i class="devicon-wordpress-plain-wordmark colored fa-3x"></i>
+						<span class="nav-text">
+						WordPres
+						</span>
+					</a>
+				</li>
+				
+				
+			</ul>
+		</nav>
+	</div>
+
+
+
+
+		<div id="container">
+		</div>
+
+	<div class= "content" style="position:center;" >
+		<script type="x-shader/x-vertex" id="vertexshader">
+
+			uniform float amplitude;
+
+			attribute float displacement;
+
+			varying vec3 vNormal;
+			varying vec2 vUv;
+
+			void main() {
+
+				vNormal = normal;
+				vUv = ( 0.5 + amplitude ) * uv + vec2( amplitude );
+
+				vec3 newPosition = position + amplitude * normal * vec3( displacement );
+				gl_Position = projectionMatrix * modelViewMatrix * vec4( newPosition, 1.0 );
+
+			}
+
+		</script>
+
+		<script type="x-shader/x-fragment" id="fragmentshader">
+
+			varying vec3 vNormal;
+			varying vec2 vUv;
+
+			uniform vec3 color;
+			uniform sampler2D colorTexture;
+
+			void main() {
+
+				vec3 light = vec3( 0.5, 0.2, 1.0 );
+				light = normalize( light );
+
+				float dProd = dot( vNormal, light ) * 0.5 + 0.5;
+
+				vec4 tcolor = texture2D( colorTexture, vUv );
+				vec4 gray = vec4( vec3( tcolor.r * 0.3 + tcolor.g * 0.59 + tcolor.b * 0.11 ), 1.0 );
+
+				gl_FragColor = gray * vec4( vec3( dProd ) * vec3( color ), 1.0 );
+
+			}
+
+		</script>
+
+		<script type="module">
+
+			import * as THREE from '../build/three.module.js';
+
+			import Stats from './jsm/libs/stats.module.js';
+
+			var renderer, scene, camera, stats;
+
+			var sphere, uniforms;
+
+			var displacement, noise;
+
+			init();
+			animate();
+
+			function init() {
+
+				camera = new THREE.PerspectiveCamera( 30, window.innerWidth / window.innerHeight, 1, 10000 );
+				camera.position.z = 300;
+
+				scene = new THREE.Scene();
+				scene.background = new THREE.Color( 0x050505 );
+
+				uniforms = {
+
+					"amplitude": { value: 1.0 },
+					"color": { value: new THREE.Color( 0xff2200 ) },
+					"colorTexture": { value: new THREE.TextureLoader().load( "textures/water.jpg" ) }
+
+				};
+
+				uniforms[ "colorTexture" ].value.wrapS = uniforms[ "colorTexture" ].value.wrapT = THREE.RepeatWrapping;
+
+				var shaderMaterial = new THREE.ShaderMaterial( {
+
+					uniforms: uniforms,
+					vertexShader: document.getElementById( 'vertexshader' ).textContent,
+					fragmentShader: document.getElementById( 'fragmentshader' ).textContent
+
+				} );
+
+
+				var radius = 50, segments = 128, rings = 64;
+
+				var geometry = new THREE.SphereBufferGeometry( radius, segments, rings );
+
+				displacement = new Float32Array( geometry.attributes.position.count );
+				noise = new Float32Array( geometry.attributes.position.count );
+
+				for ( var i = 0; i < displacement.length; i ++ ) {
+
+					noise[ i ] = Math.random() * 5;
+
+				}
+
+				geometry.setAttribute( 'displacement', new THREE.BufferAttribute( displacement, 1 ) );
+
+				sphere = new THREE.Mesh( geometry, shaderMaterial );
+				scene.add( sphere );
+
+				renderer = new THREE.WebGLRenderer();
+				renderer.setPixelRatio( window.devicePixelRatio );
+				renderer.setSize( window.innerWidth, window.innerHeight );
+
+				var container = document.getElementById( 'container' );
+				container.appendChild( renderer.domElement );
+
+				stats = new Stats();
+				//container.appendChild( stats.dom );
+
+				//
+
+				window.addEventListener( 'resize', onWindowResize, false );
+
+			}
+
+			function onWindowResize() {
+
+				camera.aspect = window.innerWidth / window.innerHeight;
+				camera.updateProjectionMatrix();
+
+				renderer.setSize( window.innerWidth, window.innerHeight );
+
+			}
+
+			function animate() {
+
+				requestAnimationFrame( animate );
+
+				render();
+				stats.update();
+
+			}
+
+			function render() {
+
+				var time = Date.now() * 0.01;
+
+				sphere.rotation.y = sphere.rotation.z = 0.01 * time;
+
+				uniforms[ "amplitude" ].value = 2.5 * Math.sin( sphere.rotation.y * 0.125 );
+				uniforms[ "color" ].value.offsetHSL( 0.0005, 0, 0 );
+
+				for ( var i = 0; i < displacement.length; i ++ ) {
+
+					displacement[ i ] = Math.sin( 0.1 * i + time );
+
+					noise[ i ] += 0.5 * ( 0.5 - Math.random() );
+					noise[ i ] = THREE.MathUtils.clamp( noise[ i ], - 5, 5 );
+
+					displacement[ i ] += noise[ i ];
+
+				}
+
+				sphere.geometry.attributes.displacement.needsUpdate = true;
+
+				renderer.render( scene, camera );
+
+			}
+
+
+		</script>
+	</div>
+	
+
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home" style="position:center; top: -600px; " >
+  <div class="w3-display-middle" style="white-space:nowrap; " style="position:center;">
+  
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">M. AWAISUDDIN N.K </span>
+	
+  </div>
+</div>
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home" style="position:center; top: -940px; " >
+  <div class="w3-display-middle" style="white-space:nowrap; " style="position:center;">
+  
+    <span class="w3-center w3-padding-small w3-gray w3-large w3-wide w3-animate-opacity">CODER: <span id="js-rotating">JAVA,PYTHON,C,C++,HTML,CSS,JAVASCRIPT,PHP,MYSQL,R,Django,Web Development,Arduino,MATLAB,BLENDER,UNITY,AutoDesk</span>
+            </span>
+	
+  </div>
+  <div id="navicons" class="w3-padding-large w3-animate-opacity">
+            <span class="navlink" id="email"><a href="mailto:navidmx@gmail.com?Subject=Hey%20Navid!" target="_newtab"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></span>
+            <span class="navlink" id="github"><a href="http://www.github.com/navidmx" target="_newtab"><i class="fa fa-github" aria-hidden="true"></i></a></span>
+            <span class="navlink" id="linkedin"><a href="http://www.linkedin.com/in/navid-mamoon" target="_newtab"><i class="fa fa-linkedin" aria-hidden="true"></i></a></span>
+            <span class="navlink" id="facebook"><a href="http://www.facebook.com/navidmx" target="_newtab"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></span>
+            <span class="navlink" id="calendar"><a href="http://www.twitter.com/navidmx" target="_newtab"><i class="fa fa-twitter" aria-hidden="true"></i></a></span>
+            <span class="navlink" id="resume"><a href="#resumeModal" data-toggle="modal"><i class="fa fa-file-text-o" aria-hidden="true"></i></a></span>
+  </div>
+
+  
+  
+</div>
+
+
+	<script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/morphext.min.js"></script> <!-- Morphtext rotating text in the header --><script src="js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
+    <script >
+	$("#js-rotating").Morphext({
+		// The [in] animation type. Refer to Animate.css for a list of available animations.
+		animation: "fadeIn",
+		// An array of phrases to rotate are created based on this separator. Change it if you wish to separate the phrases differently (e.g. So Simple | Very Doge | Much Wow | Such Cool).
+		separator: ",",
+		// The delay between the changing of each phrase in milliseconds.
+		speed: 2000,
+		complete: function () {
+			// Called after the entrance animation is executed.
+		}
+    });
+	
+	
+	</script>
+	
+	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    
+
+</body>
+
+</html>
